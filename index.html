@@ -20,9 +20,7 @@
         font-family: arial, sans-serif;
         border-collapse: collapse;
         width: 30%;
-
       }
-
       td, th {
         border: 1px solid #dddddd;
         text-align: left;
@@ -40,14 +38,12 @@
           bottom: 75px;
           right: 35px;
       }
-
       #myform {
         position: absolute;
         top: 10px;
         right: 100px;
         color: #F9E79F;
       }
-
       #myElement {
 	     text-shadow:
 		-1px -1px 0 #000,
@@ -56,6 +52,11 @@
 		1px 1px 0 #000;
     }
     </style>
+    <script>
+        function myFunction(firstname, lastname){
+            alert("Welcome to Sitrus " + firstname.value + "!");
+        }
+    </script>
     <link rel="icon" href="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png">
 
   </head>
@@ -72,7 +73,7 @@
       <input type="text" name="firstname"><br>
       Last name:<br>
       <input type="text" name="lastname"><br>
-      <input type="submit" value="Submit">
+      <input onclick="myFunction(firstname, lastname)" type="submit" value="Submit">
     </form>
      <iframe id = "bottomRightUp"width="210" height="157"
     src="https://www.youtube.com/embed/5aPntFAyRts">
