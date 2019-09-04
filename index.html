@@ -32,6 +32,14 @@
           bottom: 75px;
           right: 35px;
       }
+
+      #myform {
+        position: absolute;
+        top: 10px;
+        right: 100px;
+        color: #F9E79F;
+      }
+
       #myElement {
 	     text-shadow:
 		-1px -1px 0 #000,
@@ -44,12 +52,20 @@
 
   </head>
   <body style= "background-image:url(whiteAndGoldBackground.jpg)" >
+
+
     <h1 id="myElement" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Welcome to Sitrus</h1>
     <!-- <p align= center style="color:#F9E79F; font-size:20px; font-family: Georgia">
       This is where innovation is born
     </p> -->
     <h2 id="myElement" align=center style="color:#FCF3CF;font-size:20px;font-family: Georgia;font-style:bold italic"><q cite="https://www.brainyquote.com/quotes/alan_kay_451979">If you don't fail at least 90 percent of the time, you're not aiming high enough.- Alan Kay</q></h2>
-
+    <form id="myform">
+      First name:<br>
+      <input type="text" name="firstname"><br>
+      Last name:<br>
+      <input type="text" name="lastname"><br>
+      <input type="submit" value="Submit">
+    </form>
      <iframe id = "bottomRightUp"width="210" height="157"
     src="https://www.youtube.com/embed/5aPntFAyRts">
     </iframe>
@@ -61,6 +77,8 @@
 
 
     <h2 id="myElement" style="color:#F9E79F; font-family:Georgia">Here is what Sitrus is bringing to the table</h2>
+
+
 
     <table>
       <tr>
