@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sitrus</title>
-    
+
 
     <style>
       table{
@@ -20,6 +20,16 @@
         text-align: left;
         padding: 8px;
       }
+      #bottomRight {
+          position: fixed;
+          bottom: 0;
+          right: 0;
+      }
+      #bottomRightUp {
+          position: fixed;
+          bottom: 75px;
+          right: 35px;
+      }
     </style>
 
   </head>
@@ -29,12 +39,12 @@
       This is where innovation is born
     </p>
 
-     <iframe width="420" height="315"
+     <iframe id = "bottomRightUp"width="210" height="157"
     src="https://www.youtube.com/embed/5aPntFAyRts">
     </iframe>
 
     <br />
-    <audio controls>
+    <audio id = "bottomRight"controls>
         <source src = "./audio.mp3" type="audio/mpeg">
     </audio>
 
