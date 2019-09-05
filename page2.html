@@ -10,7 +10,7 @@
       var c = document.getElementById("myCanvas").getContext("2d");
       var img = new Image();;
       img.onload = function(){
-          c.drawImage(img, 0, 0, 250, 300);
+          c.drawImage(img, 0, 0, 300, 300);
       }
       img.src="goldBar.jpg";
     }
@@ -19,6 +19,11 @@
 
 
     <style>
+	body{
+	background-image:url(whiteAndGoldBackground.jpg); 
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
         #pageNumber {
           position: fixed;
           left: 10%;
@@ -35,7 +40,7 @@
     <link rel="icon" href="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png">
 
   </head>
-  <body style= "background-image:url(whiteAndGoldBackground.jpg)">
+  <body>
 
     <h1 id="myElement" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Welcome to Sitrus</h1>
 
@@ -55,7 +60,11 @@
 
     <iframe onload="myCanvas()" align=right src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.1427051624382!2d-74.58549528459699!3d40.64878457933881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3bdf06eadecdd%3A0xb282748f1629ceac!2s110%20Allen%20Rd%2C%20Basking%20Ridge%2C%20NJ%2007920!5e0!3m2!1sen!2sus!4v1567624886912!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
     <!-- <img src="./goldBar.jpg" onload="myCanvas()" width="100" height="132"> -->
+<<<<<<< HEAD
     <canvas id="myCanvas" width="250" height="300" style="border:1px solid #d3d3d3;"></canvas>
+=======
+    <canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;"></canvas>
+>>>>>>> 29101cb25b812fae462e6f884c30c0263abc18f6
 
     <p id="pageNumber" align=center ><a href="index.html">Page 1</a></p>
 
