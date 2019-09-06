@@ -6,7 +6,7 @@ function myCanvas() {
   img.onload = function(){
       c.drawImage(img, 0, 0, 300, 300);
   }
-  img.src="goldBar.jpg";
+  img.src="./addOnFiles/goldBar.jpg";
 }
 
 function myFunction(firstname, lastname){

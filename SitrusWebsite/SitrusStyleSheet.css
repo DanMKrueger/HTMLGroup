@@ -1,7 +1,7 @@
 /* Justin Rojas, Abdul Raza, Justynn Palmer, Dan Krueger */
 
 body {
-    background-image:url(whiteAndGoldBackground.jpg);
+    background-image:url("./addOnFiles/whiteAndGoldBackground.jpg");
     background-size: cover;
 }
 
