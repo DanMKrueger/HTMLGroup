@@ -10,6 +10,10 @@ function myCanvas() {
 }
 
 function myClickFunction(username){
-    alert("Welcome to Sitrus " + username + "!");
-    location.href='index.html';
+    if(username == ""){
+        alert("Please enter a valid username!")
+    }else{
+        alert("Welcome to Sitrus " + username + "!");
+        location.href='index.html';
+    }
 }
