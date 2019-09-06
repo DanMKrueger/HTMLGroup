@@ -1,3 +1,5 @@
+/* Justin Rojas, Abdul Raza, Justynn Palmer, Dan Krueger */
+
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
   var img = new Image();;
