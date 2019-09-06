@@ -156,3 +156,15 @@ ul.list li:nth-child(5){
     1px 1px 0 #000;
     color: #F9E79F;
 }
+
+#contactInfo li{
+    font-size: 35px;
+    font-family: sans-serif;
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    list-style-type:none;
+
+}
