@@ -136,10 +136,9 @@ ul.list li{
     text-align: center;
 }
 ul.list li input{
-    font-size:30px;
+    font-size:auto;
     width: 360px;
     text-align: center;
-    padding: 10px 0px;
     color:#fff;
     background-color: #000000;
     border-radius: 5px;
