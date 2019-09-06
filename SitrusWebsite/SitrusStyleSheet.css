@@ -110,3 +110,50 @@ td, th {
     width: 50%;
     line-height: 2;
 }
+
+.form-container{
+    align-self: center;
+    font-size:30px;
+    color: #fff;
+    width: 450px;
+    height: 0px;
+    padding: 30px 30px;
+
+    border-radius: 20px;
+
+    margin: auto;
+    padding-top: 30vh;
+}
+
+ul.list{
+    list-style-type: none;
+    text-align: center;
+}
+ul.list li{
+    font-size:30px;
+    width: 360px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+ul.list li input{
+    font-size:30px;
+    width: 360px;
+    text-align: center;
+    padding: 10px 0px;
+    color:#fff;
+    background-color: #000000;
+    border-radius: 5px;
+}
+ul.list li input[type = "button"]{
+    width: 360px;
+    font-size:30px;
+    background-color: #1A5276;
+}
+ul.list li:nth-child(5){
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+    color: #F9E79F;
+}
