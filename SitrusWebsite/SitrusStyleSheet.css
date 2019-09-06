@@ -140,6 +140,7 @@ ul.list li input{
     width: 360px;
     text-align: center;
     color:#fff;
+    padding: 10px 0px;
     background-color: #000000;
     border-radius: 5px;
 }
