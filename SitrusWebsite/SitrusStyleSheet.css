@@ -140,6 +140,7 @@ ul.list li input{
     width: 360px;
     text-align: center;
     color:#fff;
+    padding: 10px 0px;
     background-color: #000000;
     border-radius: 5px;
 }
@@ -164,4 +165,19 @@ ul.list li:nth-child(5){
     color: #ffcc00;
     list-style-type:none;
 
+}
+
+.faq
+{
+    align-self: center;
+    font-size:30px;
+    color: #fff;
+    width: auto;
+    height: auto;
+    padding: 30px 30px;
+
+    border-radius: 20px;
+    border:none;
+    margin: auto;
+   /* padding-top: -30vh;*/
 }
