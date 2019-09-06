@@ -5,13 +5,13 @@ body {
 }
 
 #bigboi {
-  font-size: 100%;
-  color: #F9E79F;
-  text-shadow:
-  -1px -1px 0 #000,
-  1px -1px 0 #000,
-  -1px 1px 0 #000,
-  1px 1px 0 #000;
+    font-size: 100%;
+    color: #F9E79F;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 
@@ -21,41 +21,48 @@ body {
     bottom: -4px;
     transform: translate(-50%, -50%);
 }
-  table{
+
+table{
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 30%;
-  }
-  td, th {
+}
+
+td, th {
     border: 1px solid #dddddd;
     text-align: left;
     padding: 20px;
     color: #F9E79F;
     background-color: black;
-  }
-  #bottomRight {
-      position: fixed;
-      bottom: 0;
-      right: 0;
-  }
-  #bottomRightUp {
-      position: fixed;
-      bottom: 75px;
-      right: 35px;
-  }
-  #myform {
+}
+
+#bottomRight {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#bottomRightUp {
+    position: fixed;
+    bottom: 75px;
+    right: 35px;
+}
+
+#myform {
     position: absolute;
     top: 10px;
     right: 100px;
     color: #F9E79F;
-  }
-  #myElement {
-     text-shadow:
+}
+
+#myElement {
+    text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
     1px 1px 0 #000;
 }
+
 .myFirstClass{
     position: absolute;
     left: 40%;
