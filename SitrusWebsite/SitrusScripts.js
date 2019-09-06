@@ -9,6 +9,7 @@ function myCanvas() {
   img.src="./addOnFiles/goldBar.jpg";
 }
 
-function myFunction(firstname, lastname){
-    alert("Welcome to Sitrus " + firstname.value + "!");
+function myClickFunction(username){
+    alert("Welcome to Sitrus " + username + "!");
+    location.href='index.html';
 }
