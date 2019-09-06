@@ -1,7 +1,6 @@
 body {
-    background-image: url(whiteAndGoldBackground.jpg);
-    background-size: cover no-repeat;
-    overflow-x:hidden;
+    background-image:url(whiteAndGoldBackground.jpg);
+    background-size: cover;
 }
 
 #bigboi {
