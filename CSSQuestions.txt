@@ -1,0 +1,43 @@
+1) In what ways can CSS be integrated as a web page?
+	(Inline, External, Internal)
+
+2) What benefits do External Style Sheets have?
+	(Can control several documents from 1 spot)
+
+3) What are the draw backs to External Style Sheets?
+	(Extra download is needed to import documents having style information)
+
+4) What is the CSS box model?
+	(The CSS box defines the design and the layout of elements of CSS. The several elements
+	 are Margin, Border, Padding, and Content)
+
+5) Compare RGB values with Hexadecimal color codes?
+	(Hexidecimal: #ffffff, RGB(r, g, b)
+
+6) What is Pseudo-elements?
+	(Selector: :pseudo-element{ })
+
+7) What is the usage of Class selector?
+	(Defines more than one element. Can be A-Z, a-z, or digits. (EX:/ .myClass)
+
+8) Enlist the various fonts' attributes?
+	(They are: Font-style, Font-variant, Font-weight, Font-size, Font-family, Caption, Icon)
+
+9) What are the advantages of CSS?
+	(Gives more flexibility for setting th eproperties of the element, easy maintenance, Load pages at a faster pace)
+
+10) How can the dimensions be defined of an element?
+	(Height, Max-height, Max-width, Min-height, Min-width, Width)
+
+11) How can comments be added in CSS?
+	(/*  */)
+
+12) Define property?
+	(A style, that helps in influencing CSS. E.g. FONT. They have corresponding values or properties within them, like FONT has different style like bold, italic etc.)
+
+13) Are quotes mandatory in URL's?
+	(Quotes are optional in URL’s, and it can be single or double.)
+
+14) Can more than one declaration be added to CSS?
+	(Yes, it can be achieved using a semicolon;)
+
