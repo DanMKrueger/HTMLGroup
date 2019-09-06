@@ -96,6 +96,11 @@ td, th {
     margin-left:20px;
 }
 
+.aboutPageClass{
+    width: 50%;
+    line-height: 2;
+}
+
 /* .firstDivClass{
     text-align: center;
     height: auto;
