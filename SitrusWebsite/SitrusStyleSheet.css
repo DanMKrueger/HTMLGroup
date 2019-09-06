@@ -169,3 +169,18 @@ ul.list li:nth-child(5){
     list-style-type:none;
 
 }
+
+.faq
+{
+    align-self: center;
+    font-size:30px;
+    color: #fff;
+    width: auto;
+    height: auto;
+    padding: 30px 30px;
+
+    border-radius: 20px;
+    border:none;
+    margin: auto;
+   /* padding-top: -30vh;*/
+}
