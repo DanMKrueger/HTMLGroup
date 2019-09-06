@@ -6,28 +6,28 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: #F9E79F;
+    overflow: hidden;
+    background-color: #F9E79F;
 }
 
 .topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  }
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
 
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #a8880b;
     color: black;
-  }
+}
 
-  .topnav a.active {
+.topnav a.active {
     background-color: white;
     color: black;
-  }
+}
 
 #bigboi {
     font-size: 100%;
