@@ -6,39 +6,38 @@ body {
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: #F9E79F;
-  margin: 0;
-  padding: 0;
-  with: 100%;
-  border: 1px solid black;
-  border-right: none;
-
+    overflow: hidden;
+    background-color: #F9E79F;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    border: 1px solid black;
+    border-right: none;
 }
 
 .topnav > a {
-  list-style: none;
-  float: left;
-  color: black;
-  text-align: center;
-  border-left: 5px solid black;
-  border-right: 5px solid black;
-  width: 20%;
-  text-decoration: none;
-  font-size: 17px;
-  border-left: 1px solid black;
-  box-sizing: border-box;
-  }
+    list-style: none;
+    float: left;
+    color: black;
+    text-align: center;
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    width: 20%;
+    text-decoration: none;
+    font-size: 17px;
+    border-left: 1px solid black;
+    box-sizing: border-box;
+}
 
-  .topnav a:hover {
+.topnav a:hover {
     background-color: #a8880b;
     color: black;
-  }
+}
 
-  .topnav a.active {
+.topnav a.active {
     background-color: white;
     color: black;
-  }
+}
 
 
 #bigboi {
