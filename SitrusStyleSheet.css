@@ -1,0 +1,64 @@
+body {
+    background-image: url(whiteAndGoldBackground.jpg);
+    background-size: cover no-repeat;
+    overflow-x:hidden;
+}
+
+#bigboi {
+  font-size: 100%;
+  color: #F9E79F;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+
+#pageNumber {
+    position: fixed;
+    left: 5%;
+    bottom: -4px;
+    transform: translate(-50%, -50%);
+}
+  table{
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 30%;
+  }
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 20px;
+    color: #F9E79F;
+    background-color: black;
+  }
+  #bottomRight {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+  }
+  #bottomRightUp {
+      position: fixed;
+      bottom: 75px;
+      right: 35px;
+  }
+  #myform {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    color: #F9E79F;
+  }
+  #myElement {
+     text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+.myFirstClass{
+    position: absolute;
+    left: 40%;
+    width: 35%;
+    margin-left:20px;
+}
