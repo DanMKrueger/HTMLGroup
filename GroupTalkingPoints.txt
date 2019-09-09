@@ -1,4 +1,4 @@
 Justynn -> Home
-Abdul -> Contact 
+Abdul -> Contact
 Justin -> Sign in
-Dan ->
+Dan -> About/FAQ
