@@ -12,7 +12,7 @@
 	 are Margin, Border, Padding, and Content)
 
 5) Compare RGB values with Hexadecimal color codes?
-	(Hexidecimal: #ffffff, RGB(r, g, b)
+	(Hexadecimal: #ffffff, RGB(r, g, b)
 
 6) What is Pseudo-elements?
 	(Selector: :pseudo-element{ })
@@ -24,7 +24,7 @@
 	(They are: Font-style, Font-variant, Font-weight, Font-size, Font-family, Caption, Icon)
 
 9) What are the advantages of CSS?
-	(Gives more flexibility for setting th eproperties of the element, easy maintenance, Load pages at a faster pace)
+	(Gives more flexibility for setting the properties of the element, easy maintenance, Load pages at a faster pace)
 
 10) How can the dimensions be defined of an element?
 	(Height, Max-height, Max-width, Min-height, Min-width, Width)
@@ -40,4 +40,3 @@
 
 14) Can more than one declaration be added to CSS?
 	(Yes, it can be achieved using a semicolon;)
-
