@@ -82,7 +82,7 @@ function PasswordReset(passwordreset, confirm){
 }
 
 var x = 1;
-function myButton() {
+function DateButton() {
     if (x==1){
         x=2;
         document.getElementById('time').innerHTML = Date();
