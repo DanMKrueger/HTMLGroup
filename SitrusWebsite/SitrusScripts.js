@@ -5,6 +5,7 @@
 //Unless you're using JQuery stay outside of the document ready function brackets
 //--------------------------------------------------------------
 $(document).ready(function(){
+    const timeStop = new Audio("./addOnFiles/TheWorld.mp3");
 
     //Easter egg that creates a small dancing gif when the copyright symbol is clicked. If the gif already exists it's deleted.
     $(".copyright").click(function(){
@@ -17,7 +18,9 @@ $(document).ready(function(){
             $(".copyright").append(" <img id = 'EasterEgg' width='100' height='100'src='https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600'></img>");
         }
 
-});
+       
+    });
+    $("#theWorld").click(e => timeStop.play());
 });
 //End Just Why N Section
 //--------------------------------------------------------------
