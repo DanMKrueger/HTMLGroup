@@ -43,6 +43,15 @@ function myClickFunction2(signup){
     }
 }
 
+function myClickFunction3(passwordreset){
+    if(passwordreset == ""){
+        alert("Error you did not complete your passwordreset")
+    }else{
+        alert("Your Password has been successfully been resetted!");
+        location.href='index.html';
+    }
+}
+
 var x = 1;
 function myButton() {
     if (x==1){
