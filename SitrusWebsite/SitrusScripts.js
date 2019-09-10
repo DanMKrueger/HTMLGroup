@@ -18,7 +18,7 @@ $(document).ready(function(){
         }
     });
 /*
-    /const elevatorMusic 
+    /const elevatorMusic
     $("elevatorMusic").play();*/
 });
 //End Just Why N Section
@@ -44,10 +44,14 @@ function myClickFunction(username){
 }
 
 
-function myClickFunction2(signup){
+function myClickFunction2(signup, password, confirm){
     if(signup == ""){
         alert("Looks like you did not complete your signup!")
-    }else{
+    }
+    else if(password != confirm){
+        alert("Passwords do not match!")
+    }
+    else{
         alert("Thank you for signing up " + signup + "!");
         location.href='index.html';
     }
