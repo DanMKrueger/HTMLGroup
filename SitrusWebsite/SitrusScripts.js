@@ -1,6 +1,21 @@
 /* Justin Rojas, Abdul Raza, Justynn Palmer, Dan Krueger */
 //document.getElementById("jsID").innerHTML = "asdF";
 
+//Start Just Why N Section
+//Unless you're using JQuery stay outside of the document ready function brackets
+//--------------------------------------------------------------
+$(document).ready(function(){
+
+    $("p").mouseover(function(){
+      $("p").css("background-color", "yellow");
+    });
+    $("p").mouseout(function(){
+      $("p").css("background-color", "lightgray");
+    });
+    
+});
+//End Just Why N Section
+//--------------------------------------------------------------
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
   var img = new Image();;
