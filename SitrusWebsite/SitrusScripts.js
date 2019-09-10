@@ -41,6 +41,7 @@ function myClickFunction2(signup){
         alert("Thank you for signing up " + signup + "!");
         location.href='index.html';
     }
+}
 
 var x = 1;
 function myButton() {
