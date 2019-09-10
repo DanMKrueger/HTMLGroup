@@ -144,10 +144,16 @@ ul.list li input{
     background-color: #000000;
     border-radius: 5px;
 }
-ul.list li input[type = "button"]{
+#Submit{
     width: 360px;
     font-size:30px;
     background-color: #1A5276;
+}
+#signup
+{
+    width: 360px;
+    font-size:40px;
+    background-color: #F39C12;
 }
 ul.list li:nth-child(5){
     text-shadow:
@@ -156,6 +162,11 @@ ul.list li:nth-child(5){
     -1px 1px 0 #000,
     1px 1px 0 #000;
     color: #F9E79F;
+}
+#forgotPassword{
+    width: 360px;
+    font-size:30px;
+    background-color:#CB4335;
 }
 
 #contactInfo li{
