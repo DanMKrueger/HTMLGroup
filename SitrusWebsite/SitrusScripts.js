@@ -1,4 +1,5 @@
 /* Justin Rojas, Abdul Raza, Justynn Palmer, Dan Krueger */
+//document.getElementById("jsID").innerHTML = "asdF";
 
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
@@ -11,9 +12,10 @@ function myCanvas() {
 
 function myClickFunction(username){
     if(username == ""){
-        alert("Please enter a valid username!")
+        alert("Please enter a valid username!");
     }else{
         alert("Welcome to Sitrus " + username + "!");
+        myName = username;
         location.href='index.html';
     }
 }
