@@ -5,6 +5,7 @@
 //Unless you're using JQuery stay outside of the document ready function brackets
 //--------------------------------------------------------------
 $(document).ready(function(){
+    const timeStop = new Audio("./addOnFiles/TheWorld.mp3");
 
     //Easter egg that creates a small dancing gif when the copyright symbol is clicked. If the gif already exists it's deleted.
     $(".copyright").click(function(){
@@ -14,13 +15,15 @@ $(document).ready(function(){
         }
         else
         {
-            $("#myElement").append(" <img id = 'EasterEgg' width='100' height='100'src='https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600'></img>");
+            $(".copyright").append(" <img id = 'EasterEgg' width='100' height='100'src='https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600'></img>");
         }
+
+       
     });
+    $("#theWorld").click(e => timeStop.play());
 });
 //End Just Why N Section
 //--------------------------------------------------------------
-
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
   var img = new Image();;
@@ -30,10 +33,13 @@ function myCanvas() {
   img.src="./addOnFiles/goldBar.jpg";
 }
 
-function myClickFunction(username){
+function LoginButton(username, password){
     if(username == ""){
         alert("Please enter a valid username!");
-    }else{
+    }else if(password.length < 8){
+        alert("Password must be at least 8 characters long!");
+    }
+    else{
         alert("Welcome to Sitrus " + username + "!");
         myName = username;
         location.href='index.html';
@@ -41,17 +47,42 @@ function myClickFunction(username){
 }
 
 
-function myClickFunction2(signup){
+function SignUp(signup, password, confirm, email){
     if(signup == ""){
         alert("Looks like you did not complete your signup!")
-    }else{
+    }
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+        alert("Email is not valid!");
+    }
+    else if(password != confirm){
+        alert("Passwords do not match!")
+    }
+    else if(password.length < 8){
+        alert("Password must be at least 8 characters long!");
+    }
+    else{
         alert("Thank you for signing up " + signup + "!");
         location.href='index.html';
     }
 }
 
+function PasswordReset(passwordreset, confirm){
+    if(passwordreset == ""){
+        alert("Error you did not complete your passwordreset")
+    }else if(passwordreset != confirm){
+        alert("Passwords do not match!");
+    }
+    else if(passwordreset.length < 8){
+        alert("Password must be at least 8 characters long!");
+    }
+    else{
+        alert("Your Password has been successfully been reset!");
+        location.href='index.html';
+    }
+}
+
 var x = 1;
-function myButton() {
+function DateButton() {
     if (x==1){
         x=2;
         document.getElementById('time').innerHTML = Date();
@@ -66,8 +97,7 @@ function myButton() {
 
 var z = 1;
 function mouseMoveFunction() {
-  document.getElementById("demo").innerHTML = z+=1;
-
+    document.getElementById("demo").innerHTML = z+=1;
 }
 
 var foundingFather = ["Justin Rojas" , " Justynn Palmer" , " Abdul Raza" , " Dan Krueger"];
