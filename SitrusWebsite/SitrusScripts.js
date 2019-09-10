@@ -6,10 +6,17 @@
 //--------------------------------------------------------------
 $(document).ready(function(){
 
+    //Easter egg that creates a small dancing gif when the copyright symbol is clicked. If the gif already exists it's deleted.
     $(".copyright").click(function(){
-        $("#myElement").append("<img src= https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600 ")
+        if($("#EasterEgg").length)
+        {
+            $("#EasterEgg").remove();
+        }
+        else
+        {
+            $("#myElement").append(" <img id = 'EasterEgg' width='100' height='100'src='https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600'></img>");
+        }
     });
-
 });
 //End Just Why N Section
 //--------------------------------------------------------------
