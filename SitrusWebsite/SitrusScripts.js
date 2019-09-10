@@ -17,7 +17,6 @@ $(document).ready(function(){
             $("#myElement").append(" <img id = 'EasterEgg' width='100' height='100'src='https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600'></img>");
         }
     });
-
 });
 //End Just Why N Section
 //--------------------------------------------------------------
