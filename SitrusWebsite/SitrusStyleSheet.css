@@ -22,7 +22,7 @@ body {
     text-align: center;
     border-left: 5px solid black;
     border-right: 5px solid black;
-    width: 20%;
+    width: calc((100%)*(1/6));
     text-decoration: none;
     font-size: 17px;
     border-left: 1px solid black;
@@ -91,7 +91,7 @@ td, th {
     color: #F9E79F;
 }
 
-#myElement {
+.shadowing {
     text-shadow:
     -1px -1px 0 #000,
     1px -1px 0 #000,
@@ -144,10 +144,16 @@ ul.list li input{
     background-color: #000000;
     border-radius: 5px;
 }
-ul.list li input[type = "button"]{
+#Submit{
     width: 360px;
     font-size:30px;
     background-color: #1A5276;
+}
+#signup
+{
+    width: 360px;
+    font-size:40px;
+    background-color: #F39C12;
 }
 ul.list li:nth-child(5){
     text-shadow:
@@ -156,6 +162,11 @@ ul.list li:nth-child(5){
     -1px 1px 0 #000,
     1px 1px 0 #000;
     color: #F9E79F;
+}
+#forgotPassword{
+    width: 360px;
+    font-size:30px;
+    background-color:#CB4335;
 }
 
 #contactInfo li{
@@ -204,4 +215,5 @@ ul.list li:nth-child(5){
     margin: 10px;
     padding: 30px;
     text-align: center;
-    background-color: lightblue;}
+    background-color: lightblue;
+}

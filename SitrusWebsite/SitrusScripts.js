@@ -21,6 +21,7 @@ $(document).ready(function(){
 });
 //End Just Why N Section
 //--------------------------------------------------------------
+
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
   var img = new Image();;
@@ -39,6 +40,17 @@ function myClickFunction(username){
         location.href='index.html';
     }
 }
+
+
+function myClickFunction2(signup){
+    if(signup == ""){
+        alert("Looks like you did not complete your signup!")
+    }else{
+        alert("Thank you for signing up " + signup + "!");
+        location.href='index.html';
+    }
+}
+
 var x = 1;
 function myButton() {
     if (x==1){
@@ -52,6 +64,9 @@ function myButton() {
     }
 
 }
+
+var z = 1;
 function mouseMoveFunction() {
   document.getElementById("demo").innerHTML = z+=1;
+
 }

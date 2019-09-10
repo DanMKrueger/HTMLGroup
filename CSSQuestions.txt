@@ -11,17 +11,20 @@
 	Justynn
 
 4) What is the CSS box model?
-	(The CSS box defines the design and the layout of elements of CSS. The several elements
-	 are Margin, Border, Padding, and Content)
+	-The CSS box defines the design and the layout of elements of CSS. The several elements are Margin, Border, Padding, and Content)
 	 Justin
 
-5) Compare RGB values with Hexadecimal color codes?
+5) Compare RGB values with Hexadecimal color codes
 	(Hexadecimal: #ffffff, RGB(r, g, b)
 	Justin
 
 6) What is Pseudo-elements?
-	(Selector: :pseudo-element{ })
-	Justin
+	(Selector: :pseudo-element{ 
+	property:value;
+})
+	
+A CSS pseudo-element is used to style specified parts of an element.
+Justin
 
 7) What is the usage of Class selector?
 	(Defines more than one element. Can be A-Z, a-z, or digits. (EX:/ .myClass)
