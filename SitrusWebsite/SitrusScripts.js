@@ -55,14 +55,15 @@ var foundingFather = [" Justin Rojas" , " Justynn Palmer " , " Abdul Raza" , " D
 var newPeeps = [" Chuck Norris" , " Justin Timberlake" , " Donelys Familia"];
 var totalPeeps = foundingFather.concat(newPeeps);
 var y = 1;
-var xy = 2
+var xy = 2;
 
 function combinePeeps() {
     if (y==1) {
-        y=2
+        y=2;
+        document.getElementById('foundPeeps').innerHTML = foundingFather;
 
     }
-    document.getElementById('foundPeeps').innerHTML = foundingFather;
+
     document.getElementById('newSchool').innerHTML = totalPeeps;
 
 }
