@@ -1,6 +1,8 @@
 /* Justin Rojas, Abdul Raza, Justynn Palmer, Dan Krueger */
 //document.getElementById("jsID").innerHTML = "asdF";
 
+var z = 0;
+
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
   var img = new Image();;
@@ -18,4 +20,8 @@ function myClickFunction(username){
         myName = username;
         location.href='index.html';
     }
+}
+
+function mouseMoveFunction() {
+  document.getElementById("demo").innerHTML = z+=1;
 }
