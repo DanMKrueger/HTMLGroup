@@ -6,13 +6,9 @@
 //--------------------------------------------------------------
 $(document).ready(function(){
 
-    $("p").mouseover(function(){
-      $("p").css("background-color", "yellow");
+    $(".copyright").click(function(){
+        $("#myElement").append("<img src= https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600 ")
     });
-    $("p").mouseout(function(){
-      $("p").css("background-color", "lightgray");
-    });
-    
 });
 //End Just Why N Section
 //--------------------------------------------------------------
