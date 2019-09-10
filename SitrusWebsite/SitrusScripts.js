@@ -1,4 +1,18 @@
 /* Justin Rojas, Abdul Raza, Justynn Palmer, Dan Krueger */
+//document.getElementById("jsID").innerHTML = "asdF";
+
+//Start Just Why N Section
+//Unless you're using JQuery stay outside of the document ready function brackets
+//--------------------------------------------------------------
+$(document).ready(function(){
+
+    $(".copyright").click(function(){
+        $("#myElement").append("<img src= https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600 ")
+    });
+
+});
+//End Just Why N Section
+//--------------------------------------------------------------
 
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
@@ -11,12 +25,14 @@ function myCanvas() {
 
 function myClickFunction(username){
     if(username == ""){
-        alert("Please enter a valid username!")
+        alert("Please enter a valid username!");
     }else{
         alert("Welcome to Sitrus " + username + "!");
+        myName = username;
         location.href='index.html';
     }
 }
+
 
 function myClickFunction2(signup){
     if(signup == ""){
@@ -25,4 +41,23 @@ function myClickFunction2(signup){
         alert("Thank you for signing up " + signup + "!");
         location.href='index.html';
     }
+
+var x = 1;
+function myButton() {
+    if (x==1){
+        x=2;
+        document.getElementById('time').innerHTML = Date();
+    }
+
+    else {
+        x=1;
+        document.getElementById('time').innerHTML = null;
+    }
+
+}
+
+var z = 1;
+function mouseMoveFunction() {
+  document.getElementById("demo").innerHTML = z+=1;
+
 }

@@ -9,6 +9,7 @@
     <title>Sitrus</title>
 
     <link rel = "stylesheet" type = "text/css" href = "SitrusStyleSheet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="SitrusScripts.js"></script>
     <link rel="icon" href="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png">
 
@@ -26,7 +27,7 @@
       <h1 id="myElement" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Questions? Lets Find Out</h1>
 
       <div class = "faq">
-      <ul id = "myElement" align=center style="color:#D6EAF8;font-size:29px;font-family: Georgia;font-style: bold">
+      <ul id = "myElement" align=center style="color:#D6EAF8;font-size:25px;font-family: Georgia;font-style: bold; list-style-type: none;">
          <li id="myElement">Q: When was Sitrus founded?</li>
          <li id="myElement">A: After Chuck Norris defeated thanos he decided to make a company. So he clapped and poof! Sitrus was created.</li>
          <li id="myElement">Q: What is Sitrus's net Worth? </li>
@@ -42,6 +43,10 @@
 
       <!-- <img src="./goldBar.jpg" onload="myCanvas()" width="100" height="132"> -->
       <canvas id="myCanvas" width="300" height="300" style="border:1px solid #d3d3d3;"></canvas>
+
+      <div id="bottomRight" onmousemove="mouseMoveFunction()">
+          <p id="innerMouseMove">Satisfied Customers: <br> <span id="demo">Mouse over me!</span></p>
+      </div>
 
     </body>
 </html>
