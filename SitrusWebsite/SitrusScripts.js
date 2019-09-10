@@ -19,3 +19,16 @@ function myClickFunction(username){
         location.href='index.html';
     }
 }
+
+var x = 1;
+function myButton() {
+    if (x==1){
+        x=2;
+        document.getElementById('time').innerHTML = Date();
+    }
+
+    else {
+        x=1;
+        document.getElementById('time').innerHTML = null;
+    }
+}
