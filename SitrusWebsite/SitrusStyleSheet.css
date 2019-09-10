@@ -72,13 +72,13 @@ td, th {
     background-color: black;
 }
 
-#bottomRight {
+#elevatorMusic {
     position: fixed;
     bottom: 0;
     right: 0;
 }
 
-#bottomRightUp {
+#motivation {
     position: fixed;
     bottom: 75px;
     right: 35px;
