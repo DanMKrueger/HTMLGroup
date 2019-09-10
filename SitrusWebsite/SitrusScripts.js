@@ -16,7 +16,7 @@ $(document).ready(function(){
         {
             $(".copyright").append(" <img id = 'EasterEgg' width='100' height='100'src='https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600'></img>");
         }
-        
+
 });
 //End Just Why N Section
 //--------------------------------------------------------------
@@ -94,6 +94,5 @@ function DateButton() {
 
 var z = 1;
 function mouseMoveFunction() {
-  document.getElementById("demo").innerHTML = z+=1;
-
+    document.getElementById("demo").innerHTML = z+=1;
 }
