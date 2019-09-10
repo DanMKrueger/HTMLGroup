@@ -70,19 +70,25 @@ function mouseMoveFunction() {
 
 }
 
-var foundingFather = [" Justin Rojas" , " Justynn Palmer " , " Abdul Raza" , " Dan Krueger"];
-var newPeeps = [" Chuck Norris" , " Justin Timberlake" , " Donelys Familia"];
-var totalPeeps = foundingFather.concat(newPeeps);
+var foundingFather = ["Justin Rojas" , " Justynn Palmer" , " Abdul Raza" , " Dan Krueger"];
+var text = "":
 var y = 1;
-var xy = 2;
 
 function combinePeeps() {
     if (y==1) {
         y=2;
-        document.getElementById('foundPeeps').innerHTML = foundingFather;
+        var i;
+        for(i=0, i < foundingFather.length; i++){
+            document.getElementById('foundPeeps').innerHTML = text;
+
+        }
 
     }
 
-    document.getElementById('newSchool').innerHTML = totalPeeps;
+
+    else {
+        y=1;
+        document.getElementById('foundPeeps').innerHTML = null;
+    }
 
 }
