@@ -47,9 +47,12 @@ function LoginButton(username, password){
 }
 
 
-function SignUp(signup, password, confirm){
+function SignUp(signup, password, confirm, email){
     if(signup == ""){
         alert("Looks like you did not complete your signup!")
+    }
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+        alert("Email is not valid!");
     }
     else if(password != confirm){
         alert("Passwords do not match!")
