@@ -21,7 +21,6 @@ $(document).ready(function(){
 });
 //End Just Why N Section
 //--------------------------------------------------------------
-
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
   var img = new Image();;
