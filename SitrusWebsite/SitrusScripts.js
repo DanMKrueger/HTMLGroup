@@ -18,7 +18,7 @@ $(document).ready(function(){
         }
     });
 /*
-    /const elevatorMusic 
+    /const elevatorMusic
     $("elevatorMusic").play();*/
 });
 //End Just Why N Section
@@ -33,10 +33,13 @@ function myCanvas() {
   img.src="./addOnFiles/goldBar.jpg";
 }
 
-function myClickFunction(username){
+function LoginButton(username, password){
     if(username == ""){
         alert("Please enter a valid username!");
-    }else{
+    }else if(password.length < 8){
+        alert("Password must be at least 8 characters long!");
+    }
+    else{
         alert("Welcome to Sitrus " + username + "!");
         myName = username;
         location.href='index.html';
@@ -44,26 +47,42 @@ function myClickFunction(username){
 }
 
 
-function myClickFunction2(signup){
+function SignUp(signup, password, confirm, email){
     if(signup == ""){
         alert("Looks like you did not complete your signup!")
-    }else{
+    }
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+        alert("Email is not valid!");
+    }
+    else if(password != confirm){
+        alert("Passwords do not match!")
+    }
+    else if(password.length < 8){
+        alert("Password must be at least 8 characters long!");
+    }
+    else{
         alert("Thank you for signing up " + signup + "!");
         location.href='index.html';
     }
 }
 
-function myClickFunction3(passwordreset){
+function PasswordReset(passwordreset, confirm){
     if(passwordreset == ""){
-        alert("Error you did not complete your password reset")
-    }else{
-        alert("Your Password has been successfully been resetted!");
+        alert("Error you did not complete your passwordreset")
+    }else if(passwordreset != confirm){
+        alert("Passwords do not match!");
+    }
+    else if(passwordreset.length < 8){
+        alert("Password must be at least 8 characters long!");
+    }
+    else{
+        alert("Your Password has been successfully been reset!");
         location.href='index.html';
     }
 }
 
 var x = 1;
-function myButton() {
+function DateButton() {
     if (x==1){
         x=2;
         document.getElementById('time').innerHTML = Date();
