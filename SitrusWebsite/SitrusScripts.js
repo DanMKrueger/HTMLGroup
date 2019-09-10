@@ -18,7 +18,7 @@ $(document).ready(function(){
             $(".copyright").append(" <img id = 'EasterEgg' width='100' height='100'src='https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600'></img>");
         }
 
-       
+
     });
     $("#theWorld").click(e => timeStop.play());
 });
@@ -101,18 +101,16 @@ function mouseMoveFunction() {
 }
 
 var foundingFather = ["Justin Rojas" , " Justynn Palmer" , " Abdul Raza" , " Dan Krueger"];
-var text = "":
+var text = "";
 var y = 1;
 
 function combinePeeps() {
     if (y==1) {
         y=2;
-        var i;
-        for(i=0, i < foundingFather.length; i++){
-            document.getElementById('foundPeeps').innerHTML = text;
-
+        for(var i=0; i < foundingFather.length; i++){
+            text += foundingFather[i] + "<br>";
         }
-
+        document.getElementById('foundPeeps').innerHTML = text;
     }
 
 
@@ -120,5 +118,7 @@ function combinePeeps() {
         y=1;
         document.getElementById('foundPeeps').innerHTML = null;
     }
+
+    text = "";
 
 }
