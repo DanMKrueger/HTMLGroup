@@ -3,8 +3,6 @@
 
 //Start Just Why N Section
 //Unless you're using JQuery stay outside of the document ready function brackets
-var z = 0;
-
 //--------------------------------------------------------------
 $(document).ready(function(){
 
@@ -18,6 +16,7 @@ $(document).ready(function(){
 });
 //End Just Why N Section
 //--------------------------------------------------------------
+
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
   var img = new Image();;
