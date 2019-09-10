@@ -9,7 +9,7 @@ $(document).ready(function(){
     $(".copyright").click(function(){
         $("#myElement").append("<img src= https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600 ")
     });
-    
+
 });
 //End Just Why N Section
 //--------------------------------------------------------------
@@ -45,6 +45,8 @@ function myButton() {
     }
 
 }
+
+var z = 1;
 function mouseMoveFunction() {
   document.getElementById("demo").innerHTML = z+=1;
 }
