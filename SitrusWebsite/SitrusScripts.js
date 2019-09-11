@@ -82,38 +82,59 @@ function LoginButton(username, password){
     }
 }
 
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
 
 function SignUp(signup, password, confirm, email){
     if(signup == ""){
-        alert("Looks like you did not complete your signup!")
+        // alert("Looks like you did not complete your signup!");
+        $('.BootStrapPopUp').empty();
+        $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> You did not complete your signup!</div>");
     }
     else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-        alert("Email is not valid!");
+        $('.BootStrapPopUp').empty();
+        $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Email is not valid!</div>");
     }
     else if(password != confirm){
-        alert("Passwords do not match!")
-    }
+        $('.BootStrapPopUp').empty();
+        $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Passwords do not match!</div>");    }
     else if(password.length < 8){
-        alert("Password must be at least 8 characters long!");
+        $('.BootStrapPopUp').empty();
+        $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Password must be at least 8 characters long!</div>");
     }
     else{
-        alert("Thank you for signing up " + signup + "!");
-        location.href='index.html';
+        $('.BootStrapPopUp').empty();
+        $('.BootStrapPopUp').prepend("<div class='alert alert-success' style='font-size:2'><strong>Success!</strong> Account created! Redirecting to home page!</div>");
+        setTimeout(function(){
+            location.href='index.html';
+        }, 1000);
+
     }
 }
 
 function PasswordReset(passwordreset, confirm){
     if(passwordreset == ""){
-        alert("Error you did not complete your passwordreset")
+        $('.passwordResetPopup').empty();
+        $('.passwordResetPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> You did not complete your password reset!</div>");
     }else if(passwordreset != confirm){
-        alert("Passwords do not match!");
-    }
+        $('.passwordResetPopup').empty();
+        $('.passwordResetPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Passwords do not match!</div>");    }
     else if(passwordreset.length < 8){
-        alert("Password must be at least 8 characters long!");
+        $('.passwordResetPopup').empty();
+        $('.passwordResetPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Password must be at least 8 characters long!</div>");
     }
     else{
-        alert("Your Password has been successfully been reset!");
-        location.href='index.html';
+        $('.passwordResetPopup').empty();
+        $('.passwordResetPopup').prepend("<div class='alert alert-success' style='font-size:2'><strong>Warning!</strong> Password has been reset!</div>");
+        setTimeout(function(){
+            location.href='index.html';
+        }, 1000);
     }
 }
 
