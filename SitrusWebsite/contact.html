@@ -2,50 +2,64 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Sitrus</title>
+    <title>Sitrus</title>
 
-        <link rel = "stylesheet" type = "text/css" href = "SitrusStyleSheet.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="SitrusScripts.js"></script>
-        <link rel="icon" href="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png">
+    <link rel = "stylesheet" type = "text/css" href = "SitrusStyleSheet.css" />
 
-    </head>
+    <!--Bootstrap & JQuery import-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-    <body>
+    <script src="SitrusScripts.js"></script>
+    <link rel="icon" href="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png">
 
-        <nav class="topnav">
-            <a href="index.html">Home</a>
-            <a href="faq.html">FAQ</a>
-            <a class="active" href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-            <a href="Login.html">Login</a>
-            <a href="SignUp.html">Sign Up</a>
-        </nav>
+  </head>
+  <body>
 
-        <h1 class="shadowing" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Welcome to Sitrus</h1>
-        <h2 class="shadowing" align=left style="color:#F7DC6F;font-size:40px;font-family: sans-serif">Contact Information</h2>
+      <nav class="topnav">
+          <a href="index.html">Home</a>
+          <a href="faq.html">FAQ</a>
+          <a class="active" href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+          <a href="Login.html">Login</a>
+          <a href="SignUp.html">SignUp</a>
+      </nav>
 
-        <ul id="contactInfo">
-            <li>Founded by Justin Rojas, May he rest in peace</li>
-            <br>
-            <li>CEO Chuck Norris: <a href = "mailto: Chuckie123@sitrus.com">Chuckie123@sitrus.com</a></li>
-            <br>
-            <li>COO Justin Timberlake: <a href = "mailto: BringingSexyback@sitrus.com">BringingSexyback@sitrus.com</a></li>
-            <br>
-            <li>CTO Donnelys Familia: <a href = "mailto: donnelys05@sitrus.com">donnelys05@sitrus.com</a></li>
-            <br>
-            <li>Sanitation Expert Dan Krueger: <a href = "mailto: dantheman23@sitrus.com">dantheman23@sitrus.com</a></li>
-            <br>
-            <br>
-            <li>Please feel free to contact our hotline with any concerns! 1-800-Sitrus1
-        </ul>
+      <h1 class="shadowing" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Welcome to Sitrus</h1>
+
+      <h2 class="shadowing" align=left style="color:#F7DC6F;font-size:40px;font-family: sans-serif">Contact Information</h2>
+
+      <ul id="contactInfo">
+          <li>Founded by Justin Rojas, May he rest in peace</li>
+          <br>
+          <li>CEO Chuck Norris: <a href = "mailto: Chuckie123@sitrus.com">Chuckie123@sitrus.com</a></li>
+          <br>
+          <li>COO Justin Timberlake: <a href = "mailto: BringingSexyback@sitrus.com">BringingSexyback@sitrus.com</a></li>
+          <br>
+          <li>CTO Donnelys Familia: <a href = "mailto: donnelys05@sitrus.com">donnelys05@sitrus.com</a></li>
+          <br>
+          <li>Sanitation Expert Dan Krueger: <a href = "mailto: dantheman23@sitrus.com">dantheman23@sitrus.com</a></li>
+          <br>
+          <br>
+          <li>Please feel free to contact our hotline with any concerns! 1-800-Sitrus1
+      </ul>
+
+      <div align=topRight>
+          <button type="button" style="background-color: #F9E79F; margin: 10; padding: 10; font-size: 6;" onclick="combinePeeps()">
+            Click to see our Founding Fathers!</button>
+            <p id="foundPeeps"  align=topRight style="font-size: 15; color: white;"></p>
+        </div>
 
 
-        <iframe onload="myCanvas()" align=right src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.1427051624382!2d-74.58549528459699!3d40.64878457933881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3bdf06eadecdd%3A0xb282748f1629ceac!2s110%20Allen%20Rd%2C%20Basking%20Ridge%2C%20NJ%2007920!5e0!3m2!1sen!2sus!4v1567624886912!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        <iframe src="https://discordapp.com/widget?id=621031655418626059&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+
+
+
+      <iframe onload="myCanvas()" align=right src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.1427051624382!2d-74.58549528459699!3d40.64878457933881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3bdf06eadecdd%3A0xb282748f1629ceac!2s110%20Allen%20Rd%2C%20Basking%20Ridge%2C%20NJ%2007920!5e0!3m2!1sen!2sus!4v1567624886912!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+      <iframe src="https://discordapp.com/widget?id=621031655418626059&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
     </body>
 </html>
