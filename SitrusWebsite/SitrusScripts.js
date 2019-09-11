@@ -39,7 +39,8 @@ $(document).ready(function(){
         setTimeout(function() {
             $('#Dio').remove();
           }, 4500);
-    
+          });
+
     //FAQ Page Script for dynamically changing picture from canvas element to img element. Example of working with future/dynamic elements
           $context = $('#myCanvas')[0].getContext("2d");
           $img = new Image();
@@ -47,16 +48,16 @@ $(document).ready(function(){
               $context.drawImage($img, 0, 0, 300, 300);
           }
           $img.src="./addOnFiles/goldBar.jpg";
-          
+
           $(document).on("click", '#myCanvas', function(){
               $('#myCanvas').remove();
               $('#removeableDiv').append("<img id='orangeGif' src='https://media0.giphy.com/media/fnJWA6rIGgYmlksSEN/giphy.gif?cid=790b7611690160899a1860e577d4d8fff24d31a69719f932&rid=giphy.gif' width='300' height='300'></img>");
           });
-      
+
           $(document).on("click", '#orangeGif', function(){
               $('#orangeGif').remove();
               $('#removeableDiv').append("<canvas id='myCanvas' width='300' height='300' style='border:1px solid #d3d3d3;'></canvas>");
-              
+
                   $context = $('#myCanvas')[0].getContext("2d");
                   $img = new Image();
                   $img.onload = function(){
@@ -64,8 +65,6 @@ $(document).ready(function(){
                   }
                   $img.src="./addOnFiles/goldBar.jpg";
                 });
-        
-    });
 });
 //End Just Why N Section
 //--------------------------------------------------------------
