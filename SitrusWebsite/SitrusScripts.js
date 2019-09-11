@@ -8,6 +8,7 @@ $(document).ready(function(){
     const timeStop = new Audio("./addOnFiles/ZA WARUDO.mp3");
 
     //Easter egg that creates a small dancing gif when the copyright symbol is clicked. If the gif already exists it's deleted.
+
     $(".copyright").click(function(){
         if($("#EasterEgg").length)
         {
@@ -20,6 +21,7 @@ $(document).ready(function(){
     });
 
     //If the words "the world" in the scrolling text are clicked, play an animation & sound clip and pause the marquee for 5 seconds.
+
     $("#theWorld").click(function(e){
 
         $("body").append("<img id = 'Dio' style = 'opacity: 0.2; position: fixed; top: 0; left: 0; bottom: 0; right: 0' width='100%' height='100%'src='https://thumbs.gfycat.com/DeficientSilentCero-size_restricted.gif'>");
@@ -37,33 +39,35 @@ $(document).ready(function(){
         setTimeout(function() {
             $('#Dio').remove();
           }, 4500);
+          });
 
+    //FAQ Page Script for dynamically changing picture from canvas element to img element. Example of working with future/dynamic elements
+          $context = $('#myCanvas')[0].getContext("2d");
+          $img = new Image();
+          $img.onload = function(){
+              $context.drawImage($img, 0, 0, 300, 300);
+          }
+          $img.src="./addOnFiles/goldBar.jpg";
 
-    });
+          $(document).on("click", '#myCanvas', function(){
+              $('#myCanvas').remove();
+              $('#removeableDiv').append("<img id='orangeGif' src='https://media0.giphy.com/media/fnJWA6rIGgYmlksSEN/giphy.gif?cid=790b7611690160899a1860e577d4d8fff24d31a69719f932&rid=giphy.gif' width='300' height='300'></img>");
+          });
+
+          $(document).on("click", '#orangeGif', function(){
+              $('#orangeGif').remove();
+              $('#removeableDiv').append("<canvas id='myCanvas' width='300' height='300' style='border:1px solid #d3d3d3;'></canvas>");
+
+                  $context = $('#myCanvas')[0].getContext("2d");
+                  $img = new Image();
+                  $img.onload = function(){
+                      $context.drawImage($img, 0, 0, 300, 300);
+                  }
+                  $img.src="./addOnFiles/goldBar.jpg";
+                });
 });
 //End Just Why N Section
 //--------------------------------------------------------------
-$(document).ready(function(){
-    $('#myCanvas').click(function(){
-        $('#myCanvas').remove();
-        $('#removeableDiv').append("<img id='orangeGif' src='https://media0.giphy.com/media/fnJWA6rIGgYmlksSEN/giphy.gif?cid=790b7611690160899a1860e577d4d8fff24d31a69719f932&rid=giphy.gif' width='300' height='300' onclick='gifClickFunction()'></img>");
-    });
-});
-
-function gifClickFunction(){
-        $('#orangeGif').remove();
-        $('#removeableDiv').append("<canvas id='myCanvas' width='300' height='300' style='border:1px solid #d3d3d3;'></canvas>");
-        myCanvas();
-}
-
-function myCanvas() {
-  var c = document.getElementById("myCanvas").getContext("2d");
-  var img = new Image();
-  img.onload = function(){
-      c.drawImage(img, 0, 0, 300, 300);
-  }
-  img.src="./addOnFiles/goldBar.jpg";
-}
 
 function LoginButton(username, password){
     if(username == ""){
@@ -78,38 +82,59 @@ function LoginButton(username, password){
     }
 }
 
+function sleep(milliseconds) {
+  var start = new Date().getTime();
+  for (var i = 0; i < 1e7; i++) {
+    if ((new Date().getTime() - start) > milliseconds){
+      break;
+    }
+  }
+}
 
 function SignUp(signup, password, confirm, email){
     if(signup == ""){
-        alert("Looks like you did not complete your signup!")
+        // alert("Looks like you did not complete your signup!");
+        $('.BootStrapPopUp').empty();
+        $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> You did not complete your signup!</div>");
     }
     else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
-        alert("Email is not valid!");
+        $('.BootStrapPopUp').empty();
+        $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Email is not valid!</div>");
     }
     else if(password != confirm){
-        alert("Passwords do not match!")
-    }
+        $('.BootStrapPopUp').empty();
+        $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Passwords do not match!</div>");    }
     else if(password.length < 8){
-        alert("Password must be at least 8 characters long!");
+        $('.BootStrapPopUp').empty();
+        $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Password must be at least 8 characters long!</div>");
     }
     else{
-        alert("Thank you for signing up " + signup + "!");
-        location.href='index.html';
+        $('.BootStrapPopUp').empty();
+        $('.BootStrapPopUp').prepend("<div class='alert alert-success' style='font-size:2'><strong>Success!</strong> Account created! Redirecting to home page!</div>");
+        setTimeout(function(){
+            location.href='index.html';
+        }, 1000);
+
     }
 }
 
 function PasswordReset(passwordreset, confirm){
     if(passwordreset == ""){
-        alert("Error you did not complete your passwordreset")
+        $('.passwordResetPopup').empty();
+        $('.passwordResetPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> You did not complete your password reset!</div>");
     }else if(passwordreset != confirm){
-        alert("Passwords do not match!");
-    }
+        $('.passwordResetPopup').empty();
+        $('.passwordResetPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Passwords do not match!</div>");    }
     else if(passwordreset.length < 8){
-        alert("Password must be at least 8 characters long!");
+        $('.passwordResetPopup').empty();
+        $('.passwordResetPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Password must be at least 8 characters long!</div>");
     }
     else{
-        alert("Your Password has been successfully been reset!");
-        location.href='index.html';
+        $('.passwordResetPopup').empty();
+        $('.passwordResetPopup').prepend("<div class='alert alert-success' style='font-size:2'><strong>Warning!</strong> Password has been reset!</div>");
+        setTimeout(function(){
+            location.href='index.html';
+        }, 1000);
     }
 }
 

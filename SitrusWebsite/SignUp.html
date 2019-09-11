@@ -5,22 +5,51 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "stylesheet" type = "text/css" href = "SitrusStyleSheet.css" />
+
+        <!--Bootstrap & JQuery import-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
         <script src="SitrusScripts.js"></script>
         <link rel="icon" href="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png">
+
     </head>
 
     <body>
 
-        <nav class="topnav">
-            <a href="index.html">Home</a>
-            <a href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-            <a href="Login.html">Login</a>
-            <a class="active" href="SignUp.html">Sign Up</a>
+        <nav class="navbar navbar-expand-md bg-warning navbar-light navbarGradient">
+
+            <a class="navbar-brand" href="index.html">
+                <img src="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png" alt="logo" style="width: 40px;">
+            </a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="SignUp.html">Sign Up</a>
+                </li>
+            </ul>
         </nav>
 
-        <div class = "form-container" id="myElement">
+        <div class="BootStrapPopUp">
+        </div>
+
+        <div class = "form-container shadowing" id="myFormContainer">
             <ul class="list" id="myElement">
                 <li><h2 style="color: #F9E79F">Sitrus Sign Up!</h2></li>
                 <li ><input type="text" id="Email" placeholder="Please enter your Email"></li>

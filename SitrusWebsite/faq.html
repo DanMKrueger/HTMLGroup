@@ -19,16 +19,34 @@
         <link rel="icon" href="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png">
 
     </head>
-    <body onload="myCanvas()">
 
-        <nav class="topnav">
-            <a href="index.html">Home</a>
-            <a class="active" href="faq.html">FAQ</a>
-            <a href="contact.html">Contact</a>
-            <a href="about.html">About</a>
-            <a href="Login.html">Login</a>
-            <a href="SignUp.html">Sign Up</a>
-        </nav>
+    <nav class="navbar navbar-expand-md bg-warning navbar-light navbarGradient">
+
+        <a class="navbar-brand" href="index.html">
+            <img src="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png" alt="logo" style="width: 40px;">
+        </a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="Login.html">Log In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="SignUp.html">Sign Up</a>
+            </li>
+        </ul>
+    </nav>
 
         <h1 class="shadowing" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Questions? Lets Find Out</h1>
 
@@ -45,33 +63,8 @@
         </div>
 
         <div id="removeableDiv">
+                <canvas id='myCanvas' width='300' height='300' style='border:1px solid #d3d3d3;'></canvas>
         </div>
-        <!-- <img src='https://media0.giphy.com/media/fnJWA6rIGgYmlksSEN/giphy.gif?cid=790b7611690160899a1860e577d4d8fff24d31a69719f932&rid=giphy.gif' width="300" height="300" ></img> -->
-
-        <!-- <script>
-            var x = 1;
-            if(x==1){
-                x=2;
-                document.getElementById('myCanvas').addEventListener('click',function(){
-                    var c = document.getElementById("myCanvas").getContext("2d");
-                    var img = new Image();;
-                    img.onload = function(){
-                        c.drawImage(img, 0, 0, 300, 300);
-                    }
-                    img.src="https://media0.giphy.com/media/fnJWA6rIGgYmlksSEN/giphy.gif?cid=790b7611690160899a1860e577d4d8fff24d31a69719f932&rid=giphy.gif";
-                },false);
-            }else if(x==2){
-                x=1;
-                document.getElementById('myCanvas').addEventListener('click',function(){
-                    var c = document.getElementById("myCanvas").getContext("2d");
-                    var img = new Image();;
-                    img.onload = function(){
-                        c.drawImage(img, 0, 0, 300, 300);
-                    }
-                    img.src="./addOnFiles/goldBar.jpg";
-                },false);
-            }
-        </script> -->
 
         <div id="bottomRight" onmousemove="mouseMoveFunction()">
             <p id="innerMouseMove">Satisfied Customers Today: <br> <span id="demo">Mouse over me!</span></p>
