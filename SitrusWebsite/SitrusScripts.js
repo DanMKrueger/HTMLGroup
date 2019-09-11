@@ -43,7 +43,6 @@ $(document).ready(function(){
 });
 //End Just Why N Section
 //--------------------------------------------------------------
-
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
   var img = new Image();;
@@ -118,4 +117,27 @@ function DateButton() {
 var z = 1;
 function mouseMoveFunction() {
     document.getElementById("demo").innerHTML = z+=1;
+}
+
+var foundingFather = ["Justin Rojas" , " Justynn Palmer" , " Abdul Raza" , " Dan Krueger"];
+var text = "";
+var y = 1;
+
+function combinePeeps() {
+    if (y==1) {
+        y=2;
+        for(var i=0; i < foundingFather.length; i++){
+            text += foundingFather[i] + "<br>";
+        }
+        document.getElementById('foundPeeps').innerHTML = text;
+    }
+
+
+    else {
+        y=1;
+        document.getElementById('foundPeeps').innerHTML = null;
+    }
+
+    text = "";
+
 }
