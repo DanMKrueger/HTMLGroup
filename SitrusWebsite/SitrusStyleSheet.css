@@ -5,6 +5,18 @@ body {
     background-size: cover;
 }
 
+@font-face {
+    font-family: august;
+    src: url("DaFont/Hey August.otf");
+}
+
+#testingfont{
+    font-family: august;
+    color:#F7DC6F;
+    font-size: 40px;
+}
+
+
 .topnav {
     overflow: hidden;
     background-color: #F9E79F;
