@@ -118,7 +118,5 @@ function combinePeeps() {
         y=1;
         document.getElementById('foundPeeps').innerHTML = null;
     }
-
     text = "";
-
 }
