@@ -37,17 +37,17 @@ $(document).ready(function(){
         setTimeout(function() {
             $('#Dio').remove();
           }, 4500);
-        
-        
+
+
     });
 });
 //End Just Why N Section
 //--------------------------------------------------------------
 $(document).ready(function(){
-    document.getElementById('myCanvas').addEventListener('click',function(){
+    $('#myCanvas').click(function(){
         $('#myCanvas').remove();
         $('#removeableDiv').append("<img id='orangeGif' src='https://media0.giphy.com/media/fnJWA6rIGgYmlksSEN/giphy.gif?cid=790b7611690160899a1860e577d4d8fff24d31a69719f932&rid=giphy.gif' width='300' height='300' onclick='gifClickFunction()'></img>");
-    },false);
+    });
 });
 
 function gifClickFunction(){
@@ -58,7 +58,7 @@ function gifClickFunction(){
 
 function myCanvas() {
   var c = document.getElementById("myCanvas").getContext("2d");
-  var img = new Image();;
+  var img = new Image();
   img.onload = function(){
       c.drawImage(img, 0, 0, 300, 300);
   }
