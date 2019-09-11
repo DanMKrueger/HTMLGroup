@@ -17,7 +17,7 @@ body {
 }
 
 
-.topnav {
+/* .topnav {
     overflow: hidden;
     background-image: linear-gradient(-90deg, #997a00, #ffdb4d);
     margin: 0;
@@ -49,8 +49,11 @@ body {
 .topnav a.active {
     background-color: white;
     color: black;
-}
+} */
 
+.navbarGradient {
+    background-image: linear-gradient(-90deg, #995c00, #ff9900);
+}
 
 #bigboi {
     font-size: 100%;
