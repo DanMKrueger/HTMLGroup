@@ -19,7 +19,7 @@ body {
 
 .topnav {
     overflow: hidden;
-    background-color: #F9E79F;
+    background-image: linear-gradient(-90deg, #997a00, #ffdb4d);
     margin: 0;
     padding: 0;
     width: 100%;
@@ -74,6 +74,7 @@ table{
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 30%;
+    background-image: linear-gradient(black,gray, black);
 }
 
 td, th {
@@ -81,7 +82,6 @@ td, th {
     text-align: left;
     padding: 20px;
     color: #F9E79F;
-    background-color: black;
 }
 
 #elevatorMusic {
