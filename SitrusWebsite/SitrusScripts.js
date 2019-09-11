@@ -5,7 +5,7 @@
 //Unless you're using JQuery stay outside of the document ready function brackets
 //--------------------------------------------------------------
 $(document).ready(function(){
-    const timeStop = new Audio("./addOnFiles/TheWorld.mp3");
+    const timeStop = new Audio("./addOnFiles/ZA WARUDO.mp3");
 
     //Easter egg that creates a small dancing gif when the copyright symbol is clicked. If the gif already exists it's deleted.
     $(".copyright").click(function(){
@@ -17,10 +17,29 @@ $(document).ready(function(){
         {
             $(".copyright").append(" <img id = 'EasterEgg' width='100' height='100'src='https://i0.wp.com/i.redd.it/r82alizwhre11.gif?w=600'></img>");
         }
-
-       
     });
-    $("#theWorld").click(e => timeStop.play());
+
+    //If the words "the world" in the scrolling text are clicked, play an animation & sound clip and pause the marquee for 5 seconds.
+    $("#theWorld").click(function(e){
+
+        $("body").append("<img id = 'Dio' style = 'opacity: 0.2; position: fixed; top: 0; left: 0; bottom: 0; right: 0' width='100%' height='100%'src='https://thumbs.gfycat.com/DeficientSilentCero-size_restricted.gif'>");
+        timeStop.play();
+
+        setTimeout(function() {
+            $("#scrollingDesc").trigger("stop");
+
+            setTimeout(function() {
+                $("#scrollingDesc").trigger("start");
+              }, 5000);
+
+          }, 1900);
+
+        setTimeout(function() {
+            $('#Dio').remove();
+          }, 4500);
+        
+        
+    });
 });
 //End Just Why N Section
 //--------------------------------------------------------------
