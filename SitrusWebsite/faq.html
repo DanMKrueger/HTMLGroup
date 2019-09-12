@@ -11,9 +11,9 @@
         <link rel = "stylesheet" type = "text/css" href = "SitrusStyleSheet.css" />
 
         <!--Bootstrap & JQuery import-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         <script src="SitrusScripts.js"></script>
 
         <link rel="icon" href="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png">
@@ -55,9 +55,11 @@
    </nav>
 
 
-        <h1 class="shadowing" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Questions? Lets Find Out</h1>
+        <div class="container">
+            <h1 class="shadowing" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Questions?</h1>
+        </div>
 
-        <div class = "faq">
+        <div class = "faq container">
             <ul class="shadowing" align=center style="color:#D6EAF8;font-size:25px;font-family: Georgia;font-style: bold; list-style-type: none;">
                 <li class="shadowing">Q: When was Sitrus founded?</li>
                 <li class="shadowing">A: After Chuck Norris defeated thanos he decided to make a company. So he clapped and poof! Sitrus was created.</li>
@@ -73,8 +75,8 @@
                 <canvas id='myCanvas' width='300' height='300' style='border:1px solid #d3d3d3;'></canvas>
         </div>
 
-        <div id="bottomRight" onmousemove="mouseMoveFunction()">
-            <p id="innerMouseMove">Satisfied Customers Today: <br> <span id="demo">Mouse over me!</span></p>
+        <div id="mouseoverBox" onmousemove="mouseMoveFunction()" class="container-fluid">
+            <p id="innerMouseMove" class="float-right">Satisfied Customers Today: <br> <span id="demo">Mouse over me!</span></p>
         </div>
     </body>
 </html>
