@@ -139,7 +139,17 @@ td, th {
     margin: auto;
     padding-top: 30vh;
 }
-
+.longinListDiv{
+    text-align:center;
+}
+.longinListDiv ul{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    /* For IE, the outcast */
+    zoom:1;
+    *display: inline;
+}
 ul.list{
     list-style-type: none;
     text-align: center;
