@@ -63,11 +63,12 @@
             <ul class="list shadowing">
                 <li><h2 style="color: #F9E79F">Sitrus Login</h2></li>
                 <li ><input type="text" id="Username" placeholder="Please enter your username"></li>
-                <li><input type="password" id="Password" placeholder="Please enter your password"></li>
-                <li><input id="Submit" type="button" name="Submit" value="Submit" onclick="LoginButton(Username.value, Password.value)"></li>
+                <li><input type="password" id="Password" placeholder="Please enter your password" onkeyup="EnterKeyPressed()"></li>
+                <li><input id="Submit" type="button" id="Submit" value="Submit" onclick="LoginButton(Username.value, Password.value)"></li>
                 <li><a href="passwordreset.html" ><input id ="forgotPassword" type="button" name="Forgot_Password?"value="Forgot Password?" ></a></li>
             </ul>
         </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
        <script src="SitrusScripts.js"></script>

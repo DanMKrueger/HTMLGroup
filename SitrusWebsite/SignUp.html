@@ -56,9 +56,9 @@
                 <li><h2 style="color: #F9E79F">Sitrus Sign Up!</h2></li>
                 <li ><input type="text" id="Email" placeholder="Please enter your Email"></li>
                 <li ><input type="text" id="Username" placeholder="Please enter your username"></li>
-                <li><input type="password" id="password" placeholder="Please enter your password"></li>
-                <li><input type="password" id="confirmPassword" placeholder="Please confirm your password"></li>
-                <li><input id="signup" type="button" name="Signup" value="Sign Up" onclick="SignUp(Username.value, password.value, confirmPassword.value, Email.value)"></li>
+                <li><input type="password" id="firstPassword" placeholder="Please enter your password"></li>
+                <li><input type="password" id="Password" placeholder="Please confirm your password" onkeyup="EnterKeyPressed()"></li>
+                <li><input type="button" id="Submit" value="Sign Up" onclick="SignUp(Username.value, firstPassword.value, Password.value, Email.value)"></li>
 
             </ul>
         </div>
