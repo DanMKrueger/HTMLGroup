@@ -48,9 +48,11 @@
         </ul>
     </nav>
 
-        <h1 class="shadowing" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Questions? Lets Find Out</h1>
+        <div class="container">
+            <h1 class="shadowing" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Questions?</h1>
+        </div>
 
-        <div class = "faq">
+        <div class = "faq container">
             <ul class="shadowing" align=center style="color:#D6EAF8;font-size:25px;font-family: Georgia;font-style: bold; list-style-type: none;">
                 <li class="shadowing">Q: When was Sitrus founded?</li>
                 <li class="shadowing">A: After Chuck Norris defeated thanos he decided to make a company. So he clapped and poof! Sitrus was created.</li>
@@ -62,11 +64,11 @@
             </ul>
         </div>
 
-        <div id="removeableDiv">
+        <div id="removeableDiv container">
                 <canvas id='myCanvas' width='300' height='300' style='border:1px solid #d3d3d3;'></canvas>
         </div>
 
-        <div id="bottomRight" onmousemove="mouseMoveFunction()">
+        <div id="mouseoverBox" onmousemove="mouseMoveFunction()" class="container" align=right>
             <p id="innerMouseMove">Satisfied Customers Today: <br> <span id="demo">Mouse over me!</span></p>
         </div>
     </body>
