@@ -114,13 +114,13 @@ td, th {
     1px 1px 0 #000;
 }
 
-.myFirstClass{
+#scrollingDesc{
     /* position: absolute;
     left: 40%;
     width: 35%;
     margin-left:20px; */
     word-wrap: break-word;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .aboutPageClass{
