@@ -11,10 +11,9 @@
         <link rel = "stylesheet" type = "text/css" href = "SitrusStyleSheet.css" />
 
         <!--Bootstrap & JQuery import-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-	   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         <script src="SitrusScripts.js"></script>
         <link rel="icon" href="https://www.lgssales.com/wp-content/uploads/2017/07/darling-oranges-1.png">
 
@@ -64,12 +63,12 @@
             </ul>
         </div>
 
-        <div id="removeableDiv container">
+        <div id="removeableDiv">
                 <canvas id='myCanvas' width='300' height='300' style='border:1px solid #d3d3d3;'></canvas>
         </div>
 
-        <div id="mouseoverBox" onmousemove="mouseMoveFunction()" class="container" align=right>
-            <p id="innerMouseMove">Satisfied Customers Today: <br> <span id="demo">Mouse over me!</span></p>
+        <div id="mouseoverBox" onmousemove="mouseMoveFunction()" class="container-fluid">
+            <p id="innerMouseMove" class="float-right">Satisfied Customers Today: <br> <span id="demo">Mouse over me!</span></p>
         </div>
     </body>
 </html>
