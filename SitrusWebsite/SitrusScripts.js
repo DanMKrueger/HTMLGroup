@@ -136,7 +136,7 @@ function PasswordReset(passwordreset, confirm){
     }
     else{
         $('.passwordResetPopup').empty();
-        $('.passwordResetPopup').prepend("<div class='alert alert-success' style='font-size:2'><strong>Warning!</strong> Password has been reset!</div>");
+        $('.passwordResetPopup').prepend("<div class='alert alert-success' style='font-size:2'><strong>Success!</strong> Password has been reset!</div>");
         setTimeout(function(){
             location.href='index.html';
         }, 1000);
