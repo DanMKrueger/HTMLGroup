@@ -71,14 +71,19 @@ $(document).ready(function(){
 
 function LoginButton(username, password){
     if(username == ""){
-        alert("Please enter a valid username!");
+        $('.loginPopup').empty();
+        $('.loginPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Enter a valid username!</div>");
     }else if(password.length < 8){
-        alert("Password must be at least 8 characters long!");
+        $('.loginPopup').empty();
+        $('.loginPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Password must be atlesat 8 characters long!</div>");
     }
     else{
-        alert("Welcome to Sitrus " + username + "!");
-        myName = username;
-        location.href='index.html';
+        // alert("Welcome to Sitrus " + username + "!");
+        $('.loginPopup').empty();
+        $('.loginPopup').prepend("<div class='alert alert-success' style='font-size:2'><strong>Success!</strong> Welcome to Sitrus!</div>");
+        setTimeout(function(){
+            location.href='index.html';
+        }, 1000);
     }
 }
 
