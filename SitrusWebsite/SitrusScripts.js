@@ -5,7 +5,7 @@
 //Unless you're using JQuery stay outside of the document ready function brackets
 //--------------------------------------------------------------
 $(document).ready(function(){
-    const timeStop = new Audio("./addOnFiles/ZA WARUDO.mp3");
+  /*  const timeStop = new Audio("./addOnFiles/ZA WARUDO.mp3");
 
     //Easter egg that creates a small dancing gif when the copyright symbol is clicked. If the gif already exists it's deleted.
 
@@ -90,7 +90,24 @@ $(document).ready(function(){
                      alert("invalid credentials");
                           }
                 });
-            }); 
+            }); */
+
+            
+
+        $.ajax({
+            url:"http://localhost:8080/signup",
+            type: 'POST',
+            data:{
+            "username": "user",
+            "userPassword": "pass",
+            "FirstName": "Justynn",
+            "LastName": "Palmer",
+            "email": "something@gmail.com",
+            "zip": "19038",
+            "userType": "admin"
+			},
+            dataType: 'json'
+    });
 });
 //End Just Why N Section
 //--------------------------------------------------------------
@@ -137,6 +154,7 @@ function sleep(milliseconds) {
 
 function SignUp(signup, password, $confirm, $email){
     if(signup == ""){
+
         // alert("Looks like you did not complete your signup!");
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> You did not complete your signup!</div>");
