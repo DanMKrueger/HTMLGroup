@@ -65,6 +65,32 @@ $(document).ready(function(){
                   }
                   $img.src="./addOnFiles/goldBar.jpg";
                 });
+
+                //When a user tries to Sign Up, send the approrpiate HTTP Request for processing
+        $('#submit').click(function() {
+            
+                 $.ajax({
+                type: "PUT",
+                url: "http://localhost:8080/signup",
+                contentType: 'application/json',
+                data:{
+                username: "user",
+                userPassword: "pass",
+                FirstName: "Justynn",
+                LastName: "Palmer",
+                email: "something@gmail.com",
+                zip: "19038",
+                usertType: "admin"
+                },
+                success:function(){
+                    alert("worked");
+                location.reload();
+                    },
+                    error:function(){
+                     alert("invalid credentials");
+                          }
+                });
+            }); 
 });
 //End Just Why N Section
 //--------------------------------------------------------------
