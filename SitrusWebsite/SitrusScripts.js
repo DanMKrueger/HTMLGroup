@@ -67,9 +67,9 @@ $(document).ready(function(){
                 });
 
                 //When a user tries to Sign Up, send the approrpiate HTTP Request for processing
-                $(document).keypress(function (e) {
-                    var key = e.which;
-                    if(key == 13)  
+                $(document).keypress(function ($e) {
+                    $key = $e.which;
+                    if($key == 13)  
                      {
                         $("#Submit").click();
                      }
