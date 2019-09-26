@@ -66,6 +66,8 @@ $(document).ready(function(){
                   $img.src="./addOnFiles/goldBar.jpg";
                 });
 
+                //When a user tries to Sign Up, send the approrpiate HTTP Request for processing
+
 });
 //End Just Why N Section
 //--------------------------------------------------------------
