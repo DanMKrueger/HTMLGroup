@@ -67,10 +67,13 @@ $(document).ready(function () {
     }
     //When a user tries to Sign Up, send the approrpiate HTTP Request for processing
     $(document).keypress(function ($e) {
-        if ($e.which == 13) {
+        if($e.which == 13)
+        {
             $("#Submit").click();
         }
     });
+
+
 });
 //End Just Why N Section
 //--------------------------------------------------------------
@@ -96,7 +99,7 @@ function LoginButton(username, password) {
 function sleep(milliseconds) {
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
-        if ((new Date().getTime() - start) > milliseconds) {
+        if ((new Date().getTime() - start) > milliseconds){
             break;
         }
     }
@@ -169,7 +172,6 @@ function PasswordReset(passwordreset, confirm) {
             location.href = 'index.html';
         }, 1000);
     }
-}
 
 var x = 1;
 function DateButton() {
@@ -183,30 +185,31 @@ function DateButton() {
         document.getElementById('time').innerHTML = null;
     }
 
-}
+    }
 
-var z = 1;
-function mouseMoveFunction() {
-    document.getElementById("demo").innerHTML = z += 1;
-}
+    var z = 1;
+    function mouseMoveFunction() {
+        document.getElementById("demo").innerHTML = z+=1;
+    }
 
-var foundingFather = ["Justin Rojas", " Justynn Palmer", " Abdul Raza", " Dan Krueger"];
-var text = "";
-var y = 1;
+    var foundingFather = ["Justin Rojas" , " Justynn Palmer" , " Abdul Raza" , " Dan Krueger"];
+    var text = "";
+    var y = 1;
 
-function combinePeeps() {
-    if (y == 1) {
-        y = 2;
-        for (var i = 0; i < foundingFather.length; i++) {
-            text += foundingFather[i] + "<br>";
+    function combinePeeps() {
+        if (y==1) {
+            y=2;
+            for(var i=0; i < foundingFather.length; i++){
+                text += foundingFather[i] + "<br>";
+            }
+            document.getElementById('foundPeeps').innerHTML = text;
         }
-        document.getElementById('foundPeeps').innerHTML = text;
-    }
 
 
-    else {
-        y = 1;
-        document.getElementById('foundPeeps').innerHTML = null;
+        else {
+            y=1;
+            document.getElementById('foundPeeps').innerHTML = null;
+        }
+        text = "";
     }
-    text = "";
 }
