@@ -42,7 +42,9 @@ $(document).ready(function(){
           });
 
     //FAQ Page Script for dynamically changing picture from canvas element to img element. Example of working with future/dynamic elements
-          $context = $('#myCanvas')[0].getContext("2d");
+    if($("#myCanvas").length)
+    {
+        $context = $('#myCanvas')[0].getContext("2d");
           $img = new Image();
           $img.onload = function(){
               $context.drawImage($img, 0, 0, 300, 300);
@@ -65,11 +67,10 @@ $(document).ready(function(){
                   }
                   $img.src="./addOnFiles/goldBar.jpg";
                 });
-
+            }
                 //When a user tries to Sign Up, send the approrpiate HTTP Request for processing
                 $(document).keypress(function ($e) {
-                    $key = $e.which;
-                    if($key == 13)  
+                    if($e.which == 13)  
                      {
                         $("#Submit").click();
                      }
