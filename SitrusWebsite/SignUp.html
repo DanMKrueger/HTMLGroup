@@ -48,20 +48,35 @@
             </div>
         </nav>
 
+        <div class="firstDivClass container">
+            <h1 class="shadowing" align=center style="color:#F7DC6F;font-size:80px;font-family: Georgia">Sitrus Sign Up! </h1>
+        </div>
+
         <div class="BootStrapPopUp">
         </div>
+        <div class="row">
+            <div class="col-12 col-md-2"></div>
+            <div class = "form-container shadowing col-12 col-md-4 float-right" id="myFormContainer">
+                <ul class="list">
+                    <!-- <li><h2 style="color: #F9E79F">Sitrus Sign Up!</h2></li> -->
+                    <li ><input type="text" id="Email" placeholder="Please enter your Email"></li>
+                    <li ><input type="text" id="Username" placeholder="Please enter your username"></li>
+                    <li><input type="text" id="first_name" placeholder="Please enter your first name"></li>
+                    <li><input type="text" id="last_name" placeholder="Please enter your last name"></li>
+                </ul>
+            </div>
+            <div class="rightList float-left shadowing">
+                <ul class="list shadowing col-12 col-md-4">
+                    <li><input type="text" id="zip" placeholder="Please enter your zipcode"></li>
+                    <li><input type="password" id="firstPassword" placeholder="Please enter your password"></li>
+                    <li><input type="password" id="Password" placeholder="Please confirm your password" onkeyup="EnterKeyPressed()"></li>
+                    <li><input type="button" id="Submit" value="Sign Up" onclick="SignUp(Username.value, firstPassword.value, Password.value, Email.value, first_name.value, last_name.value, zip.value)"></li>
 
-        <div class = "form-container shadowing" id="myFormContainer">
-            <ul class="list" id="myElement">
-                <li><h2 style="color: #F9E79F">Sitrus Sign Up!</h2></li>
-                <li ><input type="text" id="Email" placeholder="Please enter your Email"></li>
-                <li ><input type="text" id="Username" placeholder="Please enter your username"></li>
-                <li><input type="password" id="firstPassword" placeholder="Please enter your password"></li>
-                <li><input type="password" id="Password" placeholder="Please confirm your password" onkeyup="EnterKeyPressed()"></li>
-                <li><input type="button" id="Submit" value="Sign Up" onclick="SignUp(Username.value, firstPassword.value, Password.value, Email.value)"></li>
-
-            </ul>
+                </ul>
+            </div>
+            <div class="col-12 col-md-2"></div>
         </div>
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
         <script src="SitrusScripts.js"></script>

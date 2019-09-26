@@ -129,7 +129,20 @@ td, th {
 }
 
 .form-container{
-    align-self: center;
+    /* align-self: center; */
+    font-size:30px;
+    color: #fff;
+    width: 450px;
+    height: 0px;
+    padding: 30px 30px;
+
+    border-radius: 20px;
+
+    margin: auto;
+    padding-top: 30vh;
+}
+.rightList{
+    /* align-self: center; */
     font-size:30px;
     color: #fff;
     width: 450px;
@@ -158,6 +171,7 @@ ul.list{
 }
 ul.list li{
     font-size:30px;
+    /* height: 50px; */
     width: 360px;
     margin-bottom: 15px;
     text-align: center;

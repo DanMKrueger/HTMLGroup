@@ -68,7 +68,7 @@ $(document).ready(function(){
 
                 //When a user tries to Sign Up, send the approrpiate HTTP Request for processing
         $('#submit').click(function() {
-            
+
                  $.ajax({
                 type: "PUT",
                 url: "http://localhost:8080/signup",
@@ -92,22 +92,23 @@ $(document).ready(function(){
                 });
             }); */
 
-            
+
 
         $.ajax({
             url:"http://localhost:8080/signup",
             type: 'POST',
             data:{
-            "username": "user",
-            "userPassword": "pass",
-            "FirstName": "Justynn",
-            "LastName": "Palmer",
-            "email": "something@gmail.com",
-            "zip": "19038",
-            "userType": "admin"
-			},
+                username: "user",
+                userPassword: "pass",
+                FirstName: "Justynn",
+                LastName: "Palmer",
+                email: "something@gmail.com",
+                zip: "19038",
+                userType: "admin"
+            },
             dataType: 'json'
-    });
+
+        });
 });
 //End Just Why N Section
 //--------------------------------------------------------------
