@@ -137,14 +137,14 @@ function sleep(milliseconds) {
   }
 }
 
-function SignUp(username, password, confirm, newEmail, fname, lname, zipcode){
+function SignUp(user, password, confirm, newEmail, fname, lname, zipcode){
     if(user == ""){
 
         // alert("Looks like you did not complete your signup!");
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> You did not complete your signup!</div>");
     }
-    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(newEmail)){
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Email is not valid!</div>");
     }
