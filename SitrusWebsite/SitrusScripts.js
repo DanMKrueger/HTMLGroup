@@ -153,18 +153,18 @@ function sleep(milliseconds) {
   }
 }
 
-function SignUp(signup, password, $confirm, $email){
-    if(signup == ""){
+function SignUp(username, password, confirm, newEmail, fname, lname, zipcode){
+    if(user == ""){
 
         // alert("Looks like you did not complete your signup!");
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> You did not complete your signup!</div>");
     }
-    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test($email)){
+    else if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Email is not valid!</div>");
     }
-    else if(password != $confirm){
+    else if(password != confirm){
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Passwords do not match!</div>");    }
     else if(password.length < 8){
@@ -174,48 +174,22 @@ function SignUp(signup, password, $confirm, $email){
     else{
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-success' style='font-size:2'><strong>Success!</strong> Account created! Redirecting to home page!</div>");
-        // setTimeout(function(){
-        //     location.href='index.html';
-        // }, 1000);
-        //
-        // $.ajax({
-        //     url: "http://localhost:8080/signup",
-        //     type: "POST",
-        //     data:{
-        //         username: "DanKr",
-        //         userPassword: $confirm,
-        //         firstName: "Dann",
-        //         lastName: "Krueeeeger",
-        //         email: $email,
-        //         zip: "49855",
-        //         userType: "user"
-        //     },
-        //
-        //     success: function(result){
-        //         console.log(result);
-        //     },
-        //     error: function(error){
-        //         console.log(error);
-        //     }
-        // });
-        //
-        // var theBody = {
-        //     username: "DanKr",
-        //     userPassword: $confirm,
-        //     firstName: "Dann",
-        //     lastName: "Krueeeeger",
-        //     email: $email,
-        //     zip: "49855",
-        //     userType: "user"
-        //
-        // }
-        // $.post("http://localhost:8080/signup", theBody, function(data, status){
-        //     console.log("Got here");
-        // });
 
-        // var theUN = "Username";
-        // var theBody = theUN.concat(confirm,"Dan", "Krueger", email, "49855" , "admin");
-        // httpGet("http://localhost:8080/signup", theBody);
+        $.ajax({
+            url:"den1.mysql6.gear.host:3306/sitrususers",
+            type: 'POST',
+            contentType: 'application/json',
+            data: {
+            username: user,
+            userPassword: password,
+            FirstName: fname,
+            LastName: lname,
+            email: newEmail,
+            zip: zipcode,
+            userType: "user"
+			}
+
+    });
     }
 }
 
