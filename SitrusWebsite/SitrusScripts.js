@@ -150,7 +150,8 @@ function SignUp(user, password, confirm, newEmail, fname, lname, zipcode){
     }
     else if(password != confirm){
         $('.BootStrapPopUp').empty();
-        $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Passwords do not match!</div>");    }
+        $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Passwords do not match!</div>");
+    }
     else if(password.length < 8){
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Password must be at least 8 characters long!</div>");
@@ -160,7 +161,7 @@ function SignUp(user, password, confirm, newEmail, fname, lname, zipcode){
         $('.BootStrapPopUp').prepend("<div class='alert alert-success' style='font-size:2'><strong>Success!</strong> Account created! Redirecting to home page!</div>");
 
         $.ajax({
-            url:"den1.mysql6.gear.host:3306/sitrususers",
+            url:"http://localhost:8080/signup",
             type: 'POST',
             contentType: 'application/json',
             data: {
