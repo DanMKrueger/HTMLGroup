@@ -68,7 +68,7 @@ $(document).ready(function(){
         });
     }
     //When a user tries to Sign Up, send the approrpiate HTTP Request for processing
-    $(document).keypress(function ($e) {
+    $(document).keyup(function ($e) {
         if($e.which == 13)
         {
             $("#Submit").click();
@@ -80,8 +80,8 @@ $(document).ready(function(){
 //End Just Why N Section
 //--------------------------------------------------------------
 
-function LoginButton(username, password){
-    if(username == ""){
+function LoginButton(user, password){
+    if(user == ""){
         $('.loginPopup').empty();
         $('.loginPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Enter a valid username!</div>");
     }else if(password.length < 8){
@@ -92,9 +92,20 @@ function LoginButton(username, password){
         // alert("Welcome to Sitrus " + username + "!");
         $('.loginPopup').empty();
         $('.loginPopup').prepend("<div class='alert alert-success' style='font-size:2'><strong>Success!</strong> Welcome to Sitrus!</div>");
-        setTimeout(function(){
-            location.href='index.html';
-        }, 1000);
+        // setTimeout(function(){
+        //     location.href='index.html';
+        // }, 1000);
+
+        $.ajax({
+            url:"http://localhost:8080/login",
+            type: 'POST',
+            contentType: 'application/json',
+            data: {
+                username: user,
+                userPassword: password
+            }
+
+        });
     }
 }
 
