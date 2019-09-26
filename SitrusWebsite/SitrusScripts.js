@@ -64,16 +64,16 @@ $(document).ready(function(){
                       $context.drawImage($img, 0, 0, 300, 300);
                   }
                   $img.src="./addOnFiles/goldBar.jpg";
-                });
+            });
 
                 //When a user tries to Sign Up, send the approrpiate HTTP Request for processing
                 $(document).keypress(function ($e) {
                     $key = $e.which;
-                    if($key == 13)  
-                     {
+                    if($key == '13'){
                         $("#Submit").click();
                      }
-                   });   
+                   });
+
 });
 //End Just Why N Section
 //--------------------------------------------------------------
