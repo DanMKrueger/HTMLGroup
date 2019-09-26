@@ -127,7 +127,6 @@ function SignUp(user, password, confirm, newEmail, fname, lname, zipcode) {
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Email is not valid!</div>");
     }
-<<<<<<< HEAD
     else if(zipcode.length != 5){
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Zipcode is not valid!</div>");
@@ -136,10 +135,7 @@ function SignUp(user, password, confirm, newEmail, fname, lname, zipcode) {
             $('.BootStrapPopUp').empty();
             $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Zipcode is not valid!</div>");
     }
-    else if(password != confirm){
-=======
     else if (password != confirm) {
->>>>>>> d1dd7e51f34a72602de6fe8be6da94223a1c1310
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Passwords do not match!</div>");
     }
