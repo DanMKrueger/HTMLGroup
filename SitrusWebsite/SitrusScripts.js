@@ -160,7 +160,7 @@ function SignUp(user, password, confirm, newEmail, fname, lname, zipcode){
         $('.BootStrapPopUp').prepend("<div class='alert alert-success' style='font-size:2'><strong>Success!</strong> Account created! Redirecting to home page!</div>");
 
         $.ajax({
-            url:"den1.mysql6.gear.host:3306/sitrususers",
+            url:"jdbc:mysql://den1.mysql6.gear.host:3306/sitrususers",
             type: 'POST',
             contentType: 'application/json',
             data: {
