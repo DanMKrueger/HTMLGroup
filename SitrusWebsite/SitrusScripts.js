@@ -32,48 +32,49 @@ $(document).ready(function(){
 
             setTimeout(function() {
                 $("#scrollingDesc").trigger("start");
-              }, 5000);
+            }, 5000);
 
-          }, 1900);
+        }, 1900);
 
         setTimeout(function() {
             $('#Dio').remove();
-          }, 4500);
-          });
+        }, 4500);
+    });
 
     //FAQ Page Script for dynamically changing picture from canvas element to img element. Example of working with future/dynamic elements
-    if($("#myCanvas").length)
-    {
+    if($("#myCanvas").length){
         $context = $('#myCanvas')[0].getContext("2d");
-          $img = new Image();
-          $img.onload = function(){
-              $context.drawImage($img, 0, 0, 300, 300);
-          }
-          $img.src="./addOnFiles/goldBar.jpg";
+        $img = new Image();
+        $img.onload = function(){
+            $context.drawImage($img, 0, 0, 300, 300);
+        }
+        $img.src="./addOnFiles/goldBar.jpg";
 
-          $(document).on("click", '#myCanvas', function(){
-              $('#myCanvas').remove();
-              $('#removeableDiv').append("<img id='orangeGif' src='https://media0.giphy.com/media/fnJWA6rIGgYmlksSEN/giphy.gif?cid=790b7611690160899a1860e577d4d8fff24d31a69719f932&rid=giphy.gif' width='300' height='300'></img>");
-          });
+        $(document).on("click", '#myCanvas', function(){
+            $('#myCanvas').remove();
+            $('#removeableDiv').append("<img id='orangeGif' src='https://media0.giphy.com/media/fnJWA6rIGgYmlksSEN/giphy.gif?cid=790b7611690160899a1860e577d4d8fff24d31a69719f932&rid=giphy.gif' width='300' height='300'></img>");
+        });
 
-          $(document).on("click", '#orangeGif', function(){
-              $('#orangeGif').remove();
-              $('#removeableDiv').append("<canvas id='myCanvas' width='300' height='300' style='border:1px solid #d3d3d3;'></canvas>");
+        $(document).on("click", '#orangeGif', function(){
+            $('#orangeGif').remove();
+            $('#removeableDiv').append("<canvas id='myCanvas' width='300' height='300' style='border:1px solid #d3d3d3;'></canvas>");
 
-                  $context = $('#myCanvas')[0].getContext("2d");
-                  $img = new Image();
-                  $img.onload = function(){
-                      $context.drawImage($img, 0, 0, 300, 300);
-                  }
-                  $img.src="./addOnFiles/goldBar.jpg";
-                });
-                //When a user tries to Sign Up, send the approrpiate HTTP Request for processing
-                $(document).keypress(function ($e) {
-                    if($e.which == 13)
-                     {
-                        $("#Submit").click();
-                     }
-                   });
+            $context = $('#myCanvas')[0].getContext("2d");
+            $img = new Image();
+            $img.onload = function(){
+                $context.drawImage($img, 0, 0, 300, 300);
+            }
+            $img.src="./addOnFiles/goldBar.jpg";
+        });
+    }
+    //When a user tries to Sign Up, send the approrpiate HTTP Request for processing
+    $(document).keypress(function ($e) {
+        if($e.which == 13)
+        {
+            $("#Submit").click();
+        }
+    });
+
 
 });
 //End Just Why N Section
@@ -98,12 +99,12 @@ function LoginButton(username, password){
 }
 
 function sleep(milliseconds) {
-  var start = new Date().getTime();
-  for (var i = 0; i < 1e7; i++) {
-    if ((new Date().getTime() - start) > milliseconds){
-      break;
+    var start = new Date().getTime();
+    for (var i = 0; i < 1e7; i++) {
+        if ((new Date().getTime() - start) > milliseconds){
+            break;
+        }
     }
-  }
 }
 
 function SignUp(user, password, confirm, newEmail, fname, lname, zipcode){
@@ -134,16 +135,16 @@ function SignUp(user, password, confirm, newEmail, fname, lname, zipcode){
             type: 'POST',
             contentType: 'application/json',
             data: {
-            username: user,
-            userPassword: password,
-            FirstName: fname,
-            LastName: lname,
-            email: newEmail,
-            zip: zipcode,
-            userType: "user"
-			}
+                username: user,
+                userPassword: password,
+                FirstName: fname,
+                LastName: lname,
+                email: newEmail,
+                zip: zipcode,
+                userType: "user"
+            }
 
-    });
+        });
     }
 }
 
@@ -161,55 +162,55 @@ function PasswordReset(passwordreset, confirm){
     }else if(passwordreset != confirm){
         $('.passwordResetPopup').empty();
         $('.passwordResetPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Passwords do not match!</div>");    }
-    else if(passwordreset.length < 8){
-        $('.passwordResetPopup').empty();
-        $('.passwordResetPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Password must be at least 8 characters long!</div>");
-    }
-    else{
-        $('.passwordResetPopup').empty();
-        $('.passwordResetPopup').prepend("<div class='alert alert-success' style='font-size:2'><strong>Success!</strong> Password has been reset!</div>");
-        setTimeout(function(){
-            location.href='index.html';
-        }, 1000);
-    }
-}
-
-var x = 1;
-function DateButton() {
-    if (x==1){
-        x=2;
-        document.getElementById('time').innerHTML = Date();
-    }
-
-    else {
-        x=1;
-        document.getElementById('time').innerHTML = null;
-    }
-
-}
-
-var z = 1;
-function mouseMoveFunction() {
-    document.getElementById("demo").innerHTML = z+=1;
-}
-
-var foundingFather = ["Justin Rojas" , " Justynn Palmer" , " Abdul Raza" , " Dan Krueger"];
-var text = "";
-var y = 1;
-
-function combinePeeps() {
-    if (y==1) {
-        y=2;
-        for(var i=0; i < foundingFather.length; i++){
-            text += foundingFather[i] + "<br>";
+        else if(passwordreset.length < 8){
+            $('.passwordResetPopup').empty();
+            $('.passwordResetPopup').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Password must be at least 8 characters long!</div>");
         }
-        document.getElementById('foundPeeps').innerHTML = text;
+        else{
+            $('.passwordResetPopup').empty();
+            $('.passwordResetPopup').prepend("<div class='alert alert-success' style='font-size:2'><strong>Success!</strong> Password has been reset!</div>");
+            setTimeout(function(){
+                location.href='index.html';
+            }, 1000);
+        }
     }
 
+    var x = 1;
+    function DateButton() {
+        if (x==1){
+            x=2;
+            document.getElementById('time').innerHTML = Date();
+        }
 
-    else {
-        y=1;
-        document.getElementById('foundPeeps').innerHTML = null;
+        else {
+            x=1;
+            document.getElementById('time').innerHTML = null;
+        }
+
     }
-    text = "";
-}
+
+    var z = 1;
+    function mouseMoveFunction() {
+        document.getElementById("demo").innerHTML = z+=1;
+    }
+
+    var foundingFather = ["Justin Rojas" , " Justynn Palmer" , " Abdul Raza" , " Dan Krueger"];
+    var text = "";
+    var y = 1;
+
+    function combinePeeps() {
+        if (y==1) {
+            y=2;
+            for(var i=0; i < foundingFather.length; i++){
+                text += foundingFather[i] + "<br>";
+            }
+            document.getElementById('foundPeeps').innerHTML = text;
+        }
+
+
+        else {
+            y=1;
+            document.getElementById('foundPeeps').innerHTML = null;
+        }
+        text = "";
+    }
