@@ -135,7 +135,7 @@ function SignUp(user, password, confirm, newEmail, fname, lname, zipcode) {
             $('.BootStrapPopUp').empty();
             $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Zipcode is not valid!</div>");
     }
-    else if(password != confirm){
+    else if (password != confirm) {
         $('.BootStrapPopUp').empty();
         $('.BootStrapPopUp').prepend("<div class='alert alert-danger' style='font-size:2'><strong>Warning!</strong> Passwords do not match!</div>");
     }
